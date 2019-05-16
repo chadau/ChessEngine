@@ -20,7 +20,7 @@ namespace ChessEngine
             public:
             Move(std::pair<int, int> move);
             ~Move() = default;
-            Position apply(Position currentPosition, int extendMove = 1);
+            virtual Position apply(Position currentPosition, int extendMove = 1);
             
             private:
             std::pair<int, int> m_Vector;
