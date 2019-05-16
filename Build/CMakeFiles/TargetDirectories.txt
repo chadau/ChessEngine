@@ -1,0 +1,4 @@
+C:/Users/Lucas/source/repos/ChessEngine/Build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Lucas/source/repos/ChessEngine/Build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Lucas/source/repos/ChessEngine/Build/Core/CMakeFiles/ChessEngine.Core.dir
+C:/Users/Lucas/source/repos/ChessEngine/Build/ChessEngine/CMakeFiles/ChessEngine.dir
