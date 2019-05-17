@@ -18,4 +18,5 @@ file (GLOB SOURCES "source/*.cpp")
 add_library (ChessEngine.Core ${SOURCES})
 
 
+
 # TODO: Ajoutez des tests et installez des cibles si nécessaire.

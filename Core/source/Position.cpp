@@ -66,3 +66,14 @@ namespace ChessEngine
         }
     }
 }
+
+namespace std
+{
+	template<> struct less<ChessEngine::Core::Position>
+	{
+		bool operator() (const ChessEngine::Core::Position& lhs, const ChessEngine::Core::Position& rhs) const
+		{
+			return lhs.getPosition().first < rhs.getPosition().first;
+		}
+	};
+}

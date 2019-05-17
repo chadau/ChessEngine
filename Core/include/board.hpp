@@ -3,16 +3,24 @@
 #define BOARD_HPP_
 
 #include <map>
+#include <memory>
 #include "IFigure.hpp"
 #include "Position.hpp"
 
-namespace ChessEngine::Core
+namespace ChessEngine
 {
-    class Board
-    {
-        private:
-        std::map<Position, IFigure> m_Board;
-    }
+	namespace Core
+	{
+		class Board
+		{
+		public:
+			Board();
+			~Board() = default;
+
+		private:
+			std::map<Position, std::unique_ptr<IFigure>> m_Board;
+		};
+	}
 }
 
 #endif /* !BOARD_HPP_ */

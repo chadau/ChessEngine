@@ -6,17 +6,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Lucas\source\repos\ChessEngine\ChessEngine\ChessEngine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="C:\Users\Lucas\source\repos\ChessEngine\ChessEngine\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{CC94BBFC-A840-36AE-A36B-20A63CFB36E8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{480D9D12-94A2-3B1C-8A51-69801CF2E80C}</UniqueIdentifier>
     </Filter>

@@ -7,14 +7,16 @@
 
 namespace ChessEngine
 {
-    namespace Core
-    {
-        class IFigure
-        {
-            public:
-            virtual std::vector<Move> getPossibleMove() = 0;
-        };
-    }
+	namespace Core
+	{
+		class IFigure
+		{
+		public:
+			IFigure() = default;
+			virtual ~IFigure() = 0;
+			virtual std::vector<Move> getPossibleMove() = 0;
+		};
+	}
 }
 
 #endif /* !IFIGURE_HPP_ */
