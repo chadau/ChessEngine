@@ -5,13 +5,15 @@ namespace ChessEngine
 {
 	namespace Core
 	{
-		Figure::Figure(const std::string& color, const std::string& type, const int value, Position position) 
+		Figure::Figure(const std::string& color, const std::string& type, const int value, Position &position) 
 			: IFigure(), 
 			m_Color(color), 
 			m_Type(type), 
 			m_Value(value), 
 			m_MoveSet(), 
 			m_Position(position) {};
+
+		Figure::~Figure() {}
 
 		int Figure::getValue() const
 		{
@@ -28,7 +30,7 @@ namespace ChessEngine
 			return m_Color;
 		}
 
-		void Figure::setPosition(Position &position)
+		void Figure::updatePosition(Position &newPosition)
 		{
 			m_Position = position;
 		}

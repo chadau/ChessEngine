@@ -26,11 +26,22 @@ namespace ChessEngine
 				{
 					if (m_Board[Position(std::make_pair(x, y))] == nullptr)
 						std::cout << "#";
-					else if (m_Board[Position(std::make_pair(x, y))]->getType == "pawn")
+					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "pawn")
 						std::cout << "P";
 				}
 				std::cout << std::endl;
 			}
+		}
+
+		void Board::moveFigure(const Position& origin, Position& destination)
+		{
+			m_Board[destination] = std::move(m_Board[origin]);
+			m_Board[destination]->updatePosition(destination);
+		}
+
+		void Board::putFigure(const Position& position, std::unique_ptr<IFigure> &&figure)
+		{
+			m_Board[position] = std::move(figure);
 		}
 	}
 }

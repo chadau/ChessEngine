@@ -11,9 +11,10 @@ namespace ChessEngine
 			m_MoveSet.push_back(Move(std::make_pair(1, -1)));
 		}
 
+		Pawn::~Pawn() {}
+
 		std::vector<Position> Pawn::getPossibleMove(const Board &Board)
 		{
-			 
 			return std::vector<Position>();
 		}
 	}

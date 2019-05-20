@@ -11,7 +11,7 @@ set (LIBRARY_OUTPUT_PATH "../lib")
 
 include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/include")
 
-# Chargement des soruces
+# Chargement des sources
 
 file (GLOB SOURCES "source/*.cpp")
 

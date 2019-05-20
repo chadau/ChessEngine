@@ -12,7 +12,7 @@ namespace ChessEngine
         {
             public:
             Pawn(const std::string &color);
-            ~Pawn() = default;
+			~Pawn() override;
             std::vector<Position> getPossibleMove(const Board &board) override;
         };
     }
