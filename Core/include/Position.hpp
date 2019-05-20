@@ -40,4 +40,19 @@ namespace ChessEngine
     }
 }
 
+
+/*
+** Specialization of std::less for use Position on board like a key of the std::map
+*/
+namespace std
+{
+	template<> struct less<ChessEngine::Core::Position>
+	{
+		bool operator() (const ChessEngine::Core::Position& lhs, const ChessEngine::Core::Position& rhs) const
+		{
+			return lhs.getChessPosition() > rhs.getChessPosition();
+		}
+	};
+}
+
 #endif /* !POSITION_HPP_ */
