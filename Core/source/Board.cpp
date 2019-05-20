@@ -1,5 +1,6 @@
 
 #include "Board.hpp"
+#include "IFigure.hpp"
 
 namespace ChessEngine 
 {
@@ -14,5 +15,7 @@ namespace ChessEngine
 					m_Board[Position(std::make_pair(x, y))] = nullptr;
 			}
 		}
+
+		Board::~Board() {};
 	}
 }

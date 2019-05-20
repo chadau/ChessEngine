@@ -2,23 +2,18 @@
 #ifndef PAWN_HPP_
 #define PAWN_HPP_
 
-#include <vector>
-#include "IFigure.hpp"
+#include "Figure.hpp"
 
 namespace ChessEngine
 {
     namespace Core
     {
-        class Pawn : public IFigure
+        class Pawn : public Figure
         {
             public:
-            Pawn();
+            Pawn(const std::string &color);
             ~Pawn() = default;
-            std::vector<Move> getPossibleMove() override;
-            
-            private:
-            std::vector<Move> m_MoveSet;
-            const int m_value;
+            std::vector<Position> getPossibleMove(const Board &board) override;
         };
     }
 }

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Board.hpp"
+#include "Move.hpp"
 
 int main()
 {

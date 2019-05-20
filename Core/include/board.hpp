@@ -4,18 +4,19 @@
 
 #include <map>
 #include <memory>
-#include "IFigure.hpp"
 #include "Position.hpp"
 
 namespace ChessEngine
 {
 	namespace Core
 	{
+		class IFigure;
+
 		class Board
 		{
 		public:
 			Board();
-			~Board() = default;
+			~Board();
 
 		private:
 			std::map<Position, std::unique_ptr<IFigure>> m_Board;
