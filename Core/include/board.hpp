@@ -17,6 +17,7 @@ namespace ChessEngine
 		public:
 			Board();
 			~Board();
+			void displayBoard();
 
 		private:
 			std::map<Position, std::unique_ptr<IFigure>> m_Board;

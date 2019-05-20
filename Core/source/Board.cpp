@@ -17,5 +17,20 @@ namespace ChessEngine
 		}
 
 		Board::~Board() {};
+
+		void Board::displayBoard()
+		{
+			for (auto y = 7; y >= 0; y--)
+			{
+				for (auto x = 7; x >= 0; x--)
+				{
+					if (m_Board[Position(std::make_pair(x, y))] == nullptr)
+						std::cout << "#";
+					else if (m_Board[Position(std::make_pair(x, y))]->getType == "pawn")
+						std::cout << "P";
+				}
+				std::cout << std::endl;
+			}
+		}
 	}
 }
