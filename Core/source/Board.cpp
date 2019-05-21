@@ -22,7 +22,7 @@ namespace ChessEngine
 		{
 			for (auto y = 7; y >= 0; y--)
 			{
-				for (auto x = 7; x >= 0; x--)
+				for (auto x = 0; x < 8; x++)
 				{
 					if (m_Board[Position(std::make_pair(x, y))] == nullptr)
 						std::cout << "#";
@@ -39,9 +39,15 @@ namespace ChessEngine
 			m_Board[destination]->updatePosition(destination);
 		}
 
-		void Board::putFigure(const Position& position, std::unique_ptr<IFigure> &&figure)
+		void Board::putFigure(Position& position, std::unique_ptr<IFigure>&& figure)
 		{
 			m_Board[position] = std::move(figure);
+			m_Board[position]->updatePosition(position);
+		}
+
+		std::unique_ptr<IFigure>& Board::getFigure(Position& figurePosition)
+		{
+			return m_Board[figurePosition];
 		}
 	}
 }

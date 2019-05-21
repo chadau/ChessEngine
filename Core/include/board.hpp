@@ -18,8 +18,9 @@ namespace ChessEngine
 			Board();
 			~Board();
 			void displayBoard();
-			void putFigure(const Position &position, std::unique_ptr<IFigure> &&figure);
+			void putFigure(Position &position, std::unique_ptr<IFigure> &&figure);
 			void moveFigure(const Position& origin, Position& destination);
+			std::unique_ptr<IFigure>& getFigure(Position& figurePosition);
 
 		private:
 			std::map<Position, std::unique_ptr<IFigure>> m_Board;

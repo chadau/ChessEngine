@@ -26,7 +26,7 @@ namespace ChessEngine
 
 		protected:
 			std::vector<Move> m_MoveSet;
-			Position& m_Position;
+			Position m_Position;
 		};
 	}
 }

@@ -18,6 +18,12 @@ namespace ChessEngine
            m_ChessPosition = Position::cartesianPositionToChessPosition(cartesianPosition);
            m_CartesianPosition = cartesianPosition;
        }
+
+	   Position::Position(const Position &position)
+	   {
+		   m_ChessPosition = position.m_ChessPosition;
+		   m_CartesianPosition = position.m_CartesianPosition;
+	   }
         
         std::pair<int, int> Position::chessPositionToCartesianPosition(const std::string &chessPosition)
         {
@@ -64,5 +70,12 @@ namespace ChessEngine
             m_ChessPosition = cartesianPositionToChessPosition(chessPosition);
             m_CartesianPosition = chessPosition;
         }
+
+		Position& Position::operator=(const Position& other)
+		{
+			m_ChessPosition = other.m_ChessPosition;
+			m_CartesianPosition = other.m_CartesianPosition;
+			return *this;
+		}
     }
 }

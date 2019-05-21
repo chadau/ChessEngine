@@ -8,14 +8,18 @@ namespace ChessEngine
 		Pawn::Pawn(const std::string &color) : Figure(color, "pawn", 1)
 		{
 			m_MoveSet.push_back(Move(std::make_pair(1, 1)));
-			m_MoveSet.push_back(Move(std::make_pair(1, -1)));
+			m_MoveSet.push_back(Move(std::make_pair(-1, 1)));
 		}
 
 		Pawn::~Pawn() {}
 
 		std::vector<Position> Pawn::getPossibleMove(const Board &Board)
 		{
-			return std::vector<Position>();
+			auto possibleMove = std::vector<Position>();
+
+			for (auto move : m_MoveSet)
+				possibleMove.push_back(move.apply(m_Position));
+			return possibleMove;
 		}
 	}
 }

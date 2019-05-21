@@ -32,7 +32,7 @@ namespace ChessEngine
 
 		void Figure::updatePosition(Position &newPosition)
 		{
-			m_Position = position;
+			m_Position = newPosition;
 		}
 	}
 }
