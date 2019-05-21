@@ -45,9 +45,25 @@ namespace ChessEngine
 			m_Board[position]->updatePosition(position);
 		}
 
-		std::unique_ptr<IFigure>& Board::getFigure(Position& figurePosition)
+		std::unique_ptr<IFigure>& Board::at(const Position& figurePosition)
 		{
 			return m_Board[figurePosition];
+		}
+
+		const std::unique_ptr<IFigure>& Board::at(const Position& figurePosition) const
+		{
+			return m_Board.at(figurePosition);
+		}
+
+
+		std::unique_ptr<IFigure>& Board::operator[](const Position& index)
+		{
+			return at(index);
+		}
+
+		std::unique_ptr<IFigure>& Board::operator[](const std::string& index)
+		{
+			return at(Position(index));
 		}
 	}
 }

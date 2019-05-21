@@ -13,12 +13,16 @@ namespace ChessEngine
 
 		Pawn::~Pawn() {}
 
-		std::vector<Position> Pawn::getPossibleMove(const Board &Board)
+		std::vector<Position> Pawn::getPossibleMove(const Board &board)
 		{
 			auto possibleMove = std::vector<Position>();
+			auto standardMove = Move(std::make_pair(0, 1));
 
+			if (board.at(standardMove.apply(m_Position)) == EMPTY_CASE)
+				possibleMove.push_back(standardMove.apply(m_Position));
 			for (auto move : m_MoveSet)
-				possibleMove.push_back(move.apply(m_Position));
+				if (board.at(move.apply(m_Position)) != EMPTY_CASE)
+					possibleMove.push_back(move.apply(m_Position));
 			return possibleMove;
 		}
 	}

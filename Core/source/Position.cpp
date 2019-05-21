@@ -31,7 +31,7 @@ namespace ChessEngine
             std::pair<int, int> cartesianPosition;
             
             if (!(chessPosition.size() == 2 && std::regex_search(chessPosition, patternPosition)))
-                throw std::invalid_argument("Error: Argument is not a chess position valid.");
+                throw std::invalid_argument("Position: Argument is not a chess position valid.");
             cartesianPosition.first = std::toupper(chessPosition[0]) - CHESS_TO_CARTESIAN - '0';
             cartesianPosition.second = chessPosition[1] - '0' - 1;
             return cartesianPosition;
@@ -43,7 +43,7 @@ namespace ChessEngine
             
             if (!(((cartesianPosition.first - 7) * (cartesianPosition.first - 0) <= 0) &&
                 ((cartesianPosition.second - 7) * (cartesianPosition.second - 0) <= 0)))
-                throw std::invalid_argument("Error: Argument is not a chess position valid.");
+                throw std::invalid_argument("Position: Argument is not a chess position valid.");
             chessPosition += cartesianPosition.first + CARTESIAN_TO_CHESS + '0';
             chessPosition += cartesianPosition.second + '0' + 1;
             return chessPosition;
