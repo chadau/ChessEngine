@@ -24,5 +24,5 @@ int main()
 	std::cout << std::endl;
 	board.moveFigure(ChessEngine::Core::Position("B2"), movePossible[0]);
 	board.displayBoard();
-	auto &&truc = board.at(ChessEngine::Core::Position("B2"));
+	auto &&truc = board.at(ChessEngine::Core::Position("B3"));
 }

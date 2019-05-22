@@ -17,7 +17,7 @@ namespace ChessEngine
 			int getValue() const override;
 			std::string getType() const override;
 			std::string getColor() const override;
-			void updatePosition(Position& newPosition) final;
+			void updatePosition(Position& newPosition) override;
 
 		private:
 			const int m_Value;
