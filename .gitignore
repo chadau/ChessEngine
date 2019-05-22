@@ -342,3 +342,5 @@ healthchecksdb
 build/*
 
 out
+
+./out/*
