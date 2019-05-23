@@ -17,7 +17,11 @@ namespace ChessEngine
 			void updatePosition(Position& newPosition) final;
 
 		private:
+			std::vector<Position>& limitationFilter(std::vector<Position> &possibleMove);
+
+		private:
 			bool m_FirstMove;
+			bool m_Init;
         };
     }
 }
