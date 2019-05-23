@@ -35,6 +35,8 @@ namespace ChessEngine
 
 		void Board::moveFigure(const Position& origin, Position& destination)
 		{
+			if (!positionIsEmpty(destination))
+				hitFigure(destination);
 			m_Board[destination] = std::move(m_Board[origin]);
 			m_Board[destination]->updatePosition(destination);
 		}
@@ -64,6 +66,21 @@ namespace ChessEngine
 		std::unique_ptr<IFigure>& Board::operator[](const std::string& index)
 		{
 			return at(Position(index));
+		}
+
+		bool Board::positionIsEmpty(const Position& position)
+		{
+			return (*this)[position] == EMPTY_POSITION;
+		}
+
+		bool Board::positionIsEmpty(const std::string& position)
+		{
+			return (*this)[position] == EMPTY_POSITION;
+		}
+
+		void Board::hitFigure(Position& position)
+		{
+			m_Board[position].reset();
 		}
 	}
 }

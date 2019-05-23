@@ -18,14 +18,14 @@ namespace ChessEngine
 			auto possibleMove = std::vector<Position>();
 			auto standardMove = Move(std::make_pair(0, 1));
 
-			if (board.at(standardMove.apply(m_Position)) == EMPTY_CASE)
+			if (board.at(standardMove.apply(m_Position)) == EMPTY_POSITION)
 			{
 				possibleMove.push_back(standardMove.apply(m_Position));
-				if (m_FirstMove && board.at(standardMove.apply(m_Position)) == EMPTY_CASE)
+				if (m_FirstMove && board.at(standardMove.apply(m_Position)) == EMPTY_POSITION)
 					possibleMove.push_back(standardMove.apply(m_Position, 2));
 			}
 			for (auto move : m_MoveSet)
-				if (board.at(move.apply(m_Position)) != EMPTY_CASE)
+				if (board.at(move.apply(m_Position)) != EMPTY_POSITION)
 					possibleMove.push_back(move.apply(m_Position));
 			return possibleMove;
 		}

@@ -6,7 +6,7 @@
 #include <memory>
 #include "Position.hpp"
 
-#define EMPTY_CASE (nullptr)
+constexpr auto EMPTY_POSITION = (nullptr);
 
 namespace ChessEngine
 {
@@ -26,6 +26,11 @@ namespace ChessEngine
 			const std::unique_ptr<IFigure>& at(const Position& figurePosition) const;
 			std::unique_ptr<IFigure>& operator[](const Position& index);
 			std::unique_ptr<IFigure>& operator[](const std::string& index);
+			bool positionIsEmpty(const Position& position);
+			bool positionIsEmpty(const std::string& position);
+
+		private:
+			void hitFigure(Position& position);
 
 		private:
 			std::map<Position, std::unique_ptr<IFigure>> m_Board;

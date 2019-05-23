@@ -22,7 +22,7 @@ int main()
 	auto movePossible = fig->getPossibleMove(board);
 	board.displayBoard();
 	std::cout << std::endl;
-	board.moveFigure(ChessEngine::Core::Position("B2"), movePossible[0]);
+	board.moveFigure(ChessEngine::Core::Position("B2"), movePossible[2]);
 	board.displayBoard();
 	auto &&truc = board.at(ChessEngine::Core::Position("B3"));
 }
