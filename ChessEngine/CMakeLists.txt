@@ -12,4 +12,5 @@ link_directories ("../lib")
 add_executable (ChessEngine "ChessEngine.cpp")
 target_link_libraries (ChessEngine "ChessEngine.Core")
 
+
 # TODO: Ajoutez des tests et installez des cibles si nécessaire.

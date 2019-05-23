@@ -1,0 +1,8 @@
+C:/Users/Lucas/source/repos/ChessEngine/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Lucas/source/repos/ChessEngine/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Lucas/source/repos/ChessEngine/out/build/x64-Debug/Core/CMakeFiles/ChessEngine.Core.dir
+C:/Users/Lucas/source/repos/ChessEngine/out/build/x64-Debug/Core/CMakeFiles/edit_cache.dir
+C:/Users/Lucas/source/repos/ChessEngine/out/build/x64-Debug/Core/CMakeFiles/rebuild_cache.dir
+C:/Users/Lucas/source/repos/ChessEngine/out/build/x64-Debug/ChessEngine/CMakeFiles/ChessEngine.dir
+C:/Users/Lucas/source/repos/ChessEngine/out/build/x64-Debug/ChessEngine/CMakeFiles/edit_cache.dir
+C:/Users/Lucas/source/repos/ChessEngine/out/build/x64-Debug/ChessEngine/CMakeFiles/rebuild_cache.dir
