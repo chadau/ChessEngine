@@ -10,12 +10,12 @@ namespace ChessEngine
        Position::Position(const std::string &chessPositon)
        {
             m_ChessPosition = chessPositon;
-            m_CartesianPosition = Position::chessPositionToCartesianPosition(chessPositon);
+			m_CartesianPosition = Position::chessPositionToCartesianPosition(chessPositon);
        }
        
        Position::Position(const std::pair<int, int> &cartesianPosition)
        {
-           m_ChessPosition = Position::cartesianPositionToChessPosition(cartesianPosition);
+		   m_ChessPosition = Position::cartesianPositionToChessPosition(cartesianPosition);
            m_CartesianPosition = cartesianPosition;
        }
 

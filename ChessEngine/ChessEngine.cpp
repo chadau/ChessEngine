@@ -17,13 +17,12 @@ int main()
 	std::cout << "{" << move.apply(pos).getPosition().first << "," << move.apply(pos).getPosition().second << "}" << std::endl;
 	board.putFigure(ChessEngine::Core::Position("B2"), std::make_unique<ChessEngine::Core::Pawn>("white"));
 	auto &&fig = board["B2"];
-	board.putFigure(ChessEngine::Core::Position("C3"), std::make_unique<ChessEngine::Core::Pawn>("black"));
-	auto&& figEn = board["C3"];
+	board.putFigure(ChessEngine::Core::Position("C2"), std::make_unique<ChessEngine::Core::Pawn>("black"));
+	auto&& figEn = board["C2"];
 	auto movePossibleEn = figEn->getPossibleMove(board);
 	auto movePossible = fig->getPossibleMove(board);
 	board.displayBoard();
 	std::cout << std::endl;
-	board.moveFigure(ChessEngine::Core::Position("B2"), movePossible[2]);
 	board.displayBoard();
 	auto &&truc = board.at(ChessEngine::Core::Position("B3"));
 }
