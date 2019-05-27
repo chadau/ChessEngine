@@ -62,42 +62,49 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 build cmake_object_order_depends_target_ChessEngine.Core: phony || Core\CMakeFiles\ChessEngine.Core.dir
 build Core\CMakeFiles\ChessEngine.Core.dir\source\Board.cpp.obj: CXX_COMPILER__ChessEngine.2eCore ..\..\..\Core\source\Board.cpp || cmake_object_order_depends_target_ChessEngine.Core
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC   -std=c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   INCLUDES = -I..\..\..\Core\include
   OBJECT_DIR = Core\CMakeFiles\ChessEngine.Core.dir
   OBJECT_FILE_DIR = Core\CMakeFiles\ChessEngine.Core.dir\source
   TARGET_COMPILE_PDB = Core\CMakeFiles\ChessEngine.Core.dir\ChessEngine.Core.pdb
   TARGET_PDB = lib\ChessEngine.Core.pdb
 build Core\CMakeFiles\ChessEngine.Core.dir\source\Figure.cpp.obj: CXX_COMPILER__ChessEngine.2eCore ..\..\..\Core\source\Figure.cpp || cmake_object_order_depends_target_ChessEngine.Core
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC   -std=c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   INCLUDES = -I..\..\..\Core\include
   OBJECT_DIR = Core\CMakeFiles\ChessEngine.Core.dir
   OBJECT_FILE_DIR = Core\CMakeFiles\ChessEngine.Core.dir\source
   TARGET_COMPILE_PDB = Core\CMakeFiles\ChessEngine.Core.dir\ChessEngine.Core.pdb
   TARGET_PDB = lib\ChessEngine.Core.pdb
 build Core\CMakeFiles\ChessEngine.Core.dir\source\IFigure.cpp.obj: CXX_COMPILER__ChessEngine.2eCore ..\..\..\Core\source\IFigure.cpp || cmake_object_order_depends_target_ChessEngine.Core
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC   -std=c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\Core\include
+  OBJECT_DIR = Core\CMakeFiles\ChessEngine.Core.dir
+  OBJECT_FILE_DIR = Core\CMakeFiles\ChessEngine.Core.dir\source
+  TARGET_COMPILE_PDB = Core\CMakeFiles\ChessEngine.Core.dir\ChessEngine.Core.pdb
+  TARGET_PDB = lib\ChessEngine.Core.pdb
+build Core\CMakeFiles\ChessEngine.Core.dir\source\Knight.cpp.obj: CXX_COMPILER__ChessEngine.2eCore ..\..\..\Core\source\Knight.cpp || cmake_object_order_depends_target_ChessEngine.Core
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   INCLUDES = -I..\..\..\Core\include
   OBJECT_DIR = Core\CMakeFiles\ChessEngine.Core.dir
   OBJECT_FILE_DIR = Core\CMakeFiles\ChessEngine.Core.dir\source
   TARGET_COMPILE_PDB = Core\CMakeFiles\ChessEngine.Core.dir\ChessEngine.Core.pdb
   TARGET_PDB = lib\ChessEngine.Core.pdb
 build Core\CMakeFiles\ChessEngine.Core.dir\source\Move.cpp.obj: CXX_COMPILER__ChessEngine.2eCore ..\..\..\Core\source\Move.cpp || cmake_object_order_depends_target_ChessEngine.Core
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC   -std=c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   INCLUDES = -I..\..\..\Core\include
   OBJECT_DIR = Core\CMakeFiles\ChessEngine.Core.dir
   OBJECT_FILE_DIR = Core\CMakeFiles\ChessEngine.Core.dir\source
   TARGET_COMPILE_PDB = Core\CMakeFiles\ChessEngine.Core.dir\ChessEngine.Core.pdb
   TARGET_PDB = lib\ChessEngine.Core.pdb
 build Core\CMakeFiles\ChessEngine.Core.dir\source\Pawn.cpp.obj: CXX_COMPILER__ChessEngine.2eCore ..\..\..\Core\source\Pawn.cpp || cmake_object_order_depends_target_ChessEngine.Core
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC   -std=c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   INCLUDES = -I..\..\..\Core\include
   OBJECT_DIR = Core\CMakeFiles\ChessEngine.Core.dir
   OBJECT_FILE_DIR = Core\CMakeFiles\ChessEngine.Core.dir\source
   TARGET_COMPILE_PDB = Core\CMakeFiles\ChessEngine.Core.dir\ChessEngine.Core.pdb
   TARGET_PDB = lib\ChessEngine.Core.pdb
 build Core\CMakeFiles\ChessEngine.Core.dir\source\Position.cpp.obj: CXX_COMPILER__ChessEngine.2eCore ..\..\..\Core\source\Position.cpp || cmake_object_order_depends_target_ChessEngine.Core
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC   -std=c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   INCLUDES = -I..\..\..\Core\include
   OBJECT_DIR = Core\CMakeFiles\ChessEngine.Core.dir
   OBJECT_FILE_DIR = Core\CMakeFiles\ChessEngine.Core.dir\source
@@ -111,7 +118,7 @@ build Core\CMakeFiles\ChessEngine.Core.dir\source\Position.cpp.obj: CXX_COMPILER
 #############################################
 # Link the static library lib\ChessEngine.Core.lib
 
-build lib\ChessEngine.Core.lib: CXX_STATIC_LIBRARY_LINKER__ChessEngine.2eCore Core\CMakeFiles\ChessEngine.Core.dir\source\Board.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Figure.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\IFigure.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Move.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Pawn.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Position.cpp.obj
+build lib\ChessEngine.Core.lib: CXX_STATIC_LIBRARY_LINKER__ChessEngine.2eCore Core\CMakeFiles\ChessEngine.Core.dir\source\Board.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Figure.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\IFigure.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Knight.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Move.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Pawn.cpp.obj Core\CMakeFiles\ChessEngine.Core.dir\source\Position.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = Core\CMakeFiles\ChessEngine.Core.dir

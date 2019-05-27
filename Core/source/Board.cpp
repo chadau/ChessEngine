@@ -28,6 +28,8 @@ namespace ChessEngine
 						std::cout << "#";
 					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "pawn")
 						std::cout << "P";
+					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "knight")
+						std::cout << "K";
 				}
 				std::cout << std::endl;
 			}
