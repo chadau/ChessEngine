@@ -5,13 +5,13 @@ namespace ChessEngine
 {
 	namespace Core
 	{
-		Figure::Figure(const std::string& color, const std::string& type, const int value, Position &position) 
+		Figure::Figure(const std::string& color, const std::string& type, const int value) 
 			: IFigure(), 
 			m_Color(color), 
 			m_Type(type), 
 			m_Value(value), 
 			m_MoveSet(), 
-			m_Position(position) {};
+			m_Position("A1") {};
 
 		Figure::~Figure() {}
 

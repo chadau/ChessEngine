@@ -17,7 +17,7 @@ namespace ChessEngine
 			m_MoveSet.push_back(Move(std::make_pair(-1, 2)));
 		}
 
-		ChessEngine::Core::Knight::~Knight() {}
+		Knight::~Knight() {}
 
 		std::vector<Position> Knight::getPossibleMove(const Board& board)
 		{

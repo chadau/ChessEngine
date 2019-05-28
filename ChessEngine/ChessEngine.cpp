@@ -5,6 +5,7 @@
 #include "Board.hpp"
 #include "Pawn.hpp"
 #include "Knight.hpp"
+#include "King.hpp"
 
 int main()
 {
@@ -13,9 +14,9 @@ int main()
 	ChessEngine::Core::Pawn pawn("white");
 	ChessEngine::Core::Board board;
 
-	board.putFigure(ChessEngine::Core::Position("D2"), std::make_unique<ChessEngine::Core::Knight>("white"));
-	auto&& knight = board["D2"];
-	auto moves = knight->getPossibleMove(board);
+	board.putFigure(ChessEngine::Core::Position("D4"), std::make_unique<ChessEngine::Core::King>("white"));
+	auto&& king = board["D4"];
+	auto moves = king->getPossibleMove(board);
 	board.displayBoard();
 	auto &&truc = board.at(ChessEngine::Core::Position("B3"));
 }
