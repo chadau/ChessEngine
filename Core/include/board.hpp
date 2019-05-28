@@ -26,8 +26,8 @@ namespace ChessEngine
 			const std::unique_ptr<IFigure>& at(const Position& figurePosition) const;
 			std::unique_ptr<IFigure>& operator[](const Position& index);
 			std::unique_ptr<IFigure>& operator[](const std::string& index);
-			bool positionIsEmpty(const Position& position);
-			bool positionIsEmpty(const std::string& position);
+			bool positionIsEmpty(const Position& position) const;
+			bool positionIsEmpty(const std::string& position) const;
 
 		private:
 			void hitFigure(Position& position);

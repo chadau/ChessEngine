@@ -32,6 +32,8 @@ namespace ChessEngine
 						std::cout << "N";
 					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "king")
 						std::cout << "K";
+					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "rook")
+						std::cout << "R";
 				}
 				std::cout << std::endl;
 			}
@@ -72,14 +74,14 @@ namespace ChessEngine
 			return at(Position(index));
 		}
 
-		bool Board::positionIsEmpty(const Position& position)
+		bool Board::positionIsEmpty(const Position& position) const
 		{
-			return (*this)[position] == EMPTY_POSITION;
+			return at(position) == EMPTY_POSITION;
 		}
 
-		bool Board::positionIsEmpty(const std::string& position)
+		bool Board::positionIsEmpty(const std::string& position) const
 		{
-			return (*this)[position] == EMPTY_POSITION;
+			return at(Position(position)) == EMPTY_POSITION;
 		}
 
 		void Board::hitFigure(Position& position)
