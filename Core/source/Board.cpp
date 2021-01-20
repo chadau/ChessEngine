@@ -49,7 +49,7 @@ namespace ChessEngine
 			m_Board[destination]->updatePosition(destination);
 		}
 
-		void Board::putFigure(Position& position, std::unique_ptr<IFigure>&& figure)
+		void Board::putFigure(const Position& position, std::unique_ptr<IFigure>&& figure)
 		{
 			m_Board[position] = std::move(figure);
 			m_Board[position]->updatePosition(position);

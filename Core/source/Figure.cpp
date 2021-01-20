@@ -30,7 +30,7 @@ namespace ChessEngine
 			return m_Color;
 		}
 
-		void Figure::updatePosition(Position &newPosition)
+		void Figure::updatePosition(const Position &newPosition)
 		{
 			m_Position = newPosition;
 		}

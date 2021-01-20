@@ -14,7 +14,7 @@ namespace ChessEngine
             Pawn(const std::string &color);
 			~Pawn() override;
             std::vector<Position> getPossibleMove(const Board &board) override;
-			void updatePosition(Position& newPosition) final;
+			void updatePosition(const Position& newPosition) final;
 
 		private:
 			bool m_FirstMove;

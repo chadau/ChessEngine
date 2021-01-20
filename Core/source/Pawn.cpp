@@ -35,7 +35,7 @@ namespace ChessEngine
 			return possibleMove;
 		}
 
-		void Pawn::updatePosition(Position& newPosition)
+		void Pawn::updatePosition(const Position& newPosition)
 		{
 			Figure::updatePosition(newPosition);
 			if (m_Init)

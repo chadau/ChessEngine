@@ -1,5 +1,5 @@
-# CMakeList.txt : projet CMake pour ChessEngine, incluez la source et définissez
-# la logique spécifique au projet ici.
+# CMakeList.txt: projet CMake pour ChessEngine, incluez la source et definissez
+# la logique specifique au projet ici.
 #
 cmake_minimum_required (VERSION 3.8)
 
@@ -7,7 +7,7 @@ cmake_minimum_required (VERSION 3.8)
 
 set (LIBRARY_OUTPUT_PATH "../lib")
 
-# inclusion des en-têtes
+# inclusion des en-tetes
 
 include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/include")
 
@@ -19,4 +19,4 @@ add_library (ChessEngine.Core ${SOURCES})
 
 
 
-# TODO: Ajoutez des tests et installez des cibles si nécessaire.
+# TODO: Ajoutez des tests et installez des cibles si necessaire.

@@ -13,10 +13,8 @@ namespace ChessEngine
     namespace Core
     {
         /**
-         * class Position
-         * brief 
-         * Position on the board
-         *
+         * @class Position
+         * @brief Position on the board
          */
         class Position
         {

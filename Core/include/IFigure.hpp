@@ -19,7 +19,7 @@ namespace ChessEngine
 			virtual int getValue() const = 0;
 			virtual std::string getType() const = 0;
 			virtual std::string getColor() const = 0;
-			virtual void updatePosition(Position &newPosition) = 0;
+			virtual void updatePosition(const Position &newPosition) = 0;
 		};
 	}
 }
