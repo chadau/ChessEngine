@@ -10,6 +10,16 @@ namespace ChessEngine
 {
 	namespace Core
 	{
+			enum FigureType {
+			PAWN = 0,
+			KING,
+			QUEEN,
+			ROOK,
+			BISHOP,
+			KNIGHT,
+			COUNT /*!< COUNT is the total number of type */
+		};
+
 		class IFigure
 		{
 		public:
@@ -17,7 +27,7 @@ namespace ChessEngine
 			virtual ~IFigure() = 0;
 			virtual std::vector<Position> getPossibleMove(const Board &board) = 0;
 			virtual int getValue() const = 0;
-			virtual std::string getType() const = 0;
+			virtual FigureType getType() const = 0;
 			virtual std::string getColor() const = 0;
 			virtual void updatePosition(const Position &newPosition) = 0;
 		};

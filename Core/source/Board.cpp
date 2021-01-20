@@ -24,18 +24,32 @@ namespace ChessEngine
 			{
 				for (auto x = 0; x < 8; x++)
 				{
-					if (m_Board[Position(std::make_pair(x, y))] == nullptr)
+					if (positionIsEmpty(Position(std::make_pair(x, y))))
+					{
 						std::cout << "#";
-					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "pawn")
+						continue;
+					}
+
+					switch (m_Board[Position(std::make_pair(x, y))]->getType())
+					{
+					case FigureType::PAWN:
 						std::cout << "P";
-					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "knight")
+						break;
+					case FigureType::KNIGHT:
 						std::cout << "N";
-					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "king")
+						break;
+					case FigureType::KING:
 						std::cout << "K";
-					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "rook")
+						break;
+					case FigureType::ROOK:
 						std::cout << "R";
-					else if (m_Board[Position(std::make_pair(x, y))]->getType() == "bishop")
+						break;
+					case FigureType::BISHOP:
 						std::cout << "B";
+					default:
+						std::cout << "?";
+						break;
+					}
 				}
 				std::cout << std::endl;
 			}

@@ -5,7 +5,7 @@ namespace ChessEngine
 {
 	namespace Core
 	{
-		Figure::Figure(const std::string& color, const std::string& type, const int value) 
+		Figure::Figure(const std::string &color, const FigureType &type, const int value) 
 			: IFigure(), 
 			m_Color(color), 
 			m_Type(type), 
@@ -20,7 +20,7 @@ namespace ChessEngine
 			return m_Value;
 		}
 
-		std::string Figure::getType() const
+		FigureType Figure::getType() const
 		{
 			return m_Type;
 		}

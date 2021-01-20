@@ -5,7 +5,7 @@ namespace ChessEngine
 {
 	namespace Core
 	{
-		Pawn::Pawn(const std::string &color) : Figure(color, "pawn", 1), m_FirstMove(true), m_Init(true)
+		Pawn::Pawn(const std::string &color) : Figure(color, FigureType::PAWN, 1), m_FirstMove(true), m_Init(true)
 		{
 			m_MoveSet.push_back(Move(std::make_pair(1, 1)));
 			m_MoveSet.push_back(Move(std::make_pair(-1, 1)));
