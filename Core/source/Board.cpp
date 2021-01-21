@@ -46,6 +46,7 @@ namespace ChessEngine
 						break;
 					case FigureType::BISHOP:
 						std::cout << "B";
+						break;
 					default:
 						std::cout << "?";
 						break;

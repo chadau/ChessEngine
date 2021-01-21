@@ -11,7 +11,7 @@ namespace ChessEngine
 		class Bishop : public Figure
 		{
 		public:
-			Bishop(const std::string& color);
+			Bishop(const FigureColor &color);
 			~Bishop() override;
 			std::vector<Position> getPossibleMove(const Board& board) override;
 		};

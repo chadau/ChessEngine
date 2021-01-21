@@ -5,7 +5,7 @@ namespace ChessEngine
 {
 	namespace Core
 	{
-		Bishop::Bishop(const std::string& color) : Figure(color, FigureType::BISHOP, 3)
+		Bishop::Bishop(const FigureColor &color) : Figure(color, FigureType::BISHOP, 3)
 		{
 			m_MoveSet.push_back(Move(std::make_pair(1, 1)));
 			m_MoveSet.push_back(Move(std::make_pair(1, -1)));

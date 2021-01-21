@@ -12,17 +12,17 @@ namespace ChessEngine
 		class Figure : public IFigure
 		{
 		public:
-			Figure(const std::string &color, const FigureType &type, const int value);
+			Figure(const FigureColor &color, const FigureType &type, const int value);
 			~Figure() override;
 			int getValue() const override;
 			FigureType getType() const override;
-			std::string getColor() const override;
+			FigureColor getColor() const override;
 			void updatePosition(const Position& newPosition) override;
 
 		private:
 			const int m_Value;
 			const FigureType m_Type;
-			const std::string m_Color;
+			const FigureColor m_Color;
 
 		protected:
 			std::vector<Move> m_MoveSet;

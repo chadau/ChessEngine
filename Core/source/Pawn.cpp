@@ -5,11 +5,11 @@ namespace ChessEngine
 {
 	namespace Core
 	{
-		Pawn::Pawn(const std::string &color) : Figure(color, FigureType::PAWN, 1), m_FirstMove(true), m_Init(true)
+		Pawn::Pawn(const FigureColor &color) : Figure(color, FigureType::PAWN, 1), m_FirstMove(true), m_Init(true)
 		{
 			m_MoveSet.push_back(Move(std::make_pair(1, 1)));
 			m_MoveSet.push_back(Move(std::make_pair(-1, 1)));
-			if (getColor() == "black")
+			if (getColor() == FigureColor::BLACK)
 				for (auto &move : m_MoveSet)
 					move *= Move(std::make_pair(1, -1));
 		}
@@ -19,7 +19,7 @@ namespace ChessEngine
 		std::vector<Position> Pawn::getPossibleMove(const Board &board)
 		{
 			auto possibleMove = std::vector<Position>();
-			auto standardMove = Move(std::make_pair(0, 1)) * (this->getColor() == "black" ? Move(std::make_pair(1, -1)) : Move(std::make_pair(1, 1)));
+			auto standardMove = Move(std::make_pair(0, 1)) * (this->getColor() == FigureColor::BLACK ? Move(std::make_pair(1, -1)) : Move(std::make_pair(1, 1)));
 
 			try {
 				if (board.at(standardMove.apply(m_Position)) == EMPTY_POSITION)

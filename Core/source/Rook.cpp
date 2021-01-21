@@ -5,7 +5,7 @@ namespace ChessEngine
 {
 	namespace Core
 	{
-		Rook::Rook(const std::string& color) : Figure(color, FigureType::ROOK, 5)
+		Rook::Rook(const FigureColor &color) : Figure(color, FigureType::ROOK, 5)
 		{
 			m_MoveSet.push_back(Move(std::make_pair(-1, 0)));
 			m_MoveSet.push_back(Move(std::make_pair(1, 0)));

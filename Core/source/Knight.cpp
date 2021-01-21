@@ -5,7 +5,7 @@ namespace ChessEngine
 {
 	namespace Core
 	{
-		Knight::Knight(const std::string &color) : Figure(color, FigureType::KNIGHT, 3)
+		Knight::Knight(const FigureColor &color) : Figure(color, FigureType::KNIGHT, 3)
 		{
 			m_MoveSet.push_back(Move(std::make_pair(1, 2)));
 			m_MoveSet.push_back(Move(std::make_pair(2, 1)));

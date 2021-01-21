@@ -11,7 +11,7 @@ namespace ChessEngine
         class Pawn : public Figure
         {
         public:
-            Pawn(const std::string &color);
+            Pawn(const FigureColor &color);
 			~Pawn() override;
             std::vector<Position> getPossibleMove(const Board &board) override;
 			void updatePosition(const Position& newPosition) final;

@@ -11,7 +11,7 @@ namespace ChessEngine
 		class King : public Figure
 		{
 		public:
-			King(const std::string& color);
+			King(const FigureColor& color);
 			~King() override;
 			std::vector<Position> getPossibleMove(const Board& board) override;
 		};

@@ -11,7 +11,7 @@ namespace ChessEngine
 		class Rook : public Figure
 		{
 		public:
-			Rook(const std::string& color);
+			Rook(const FigureColor &color);
 			~Rook() override;
 			std::vector<Position> getPossibleMove(const Board& board) override;
 		}; 
