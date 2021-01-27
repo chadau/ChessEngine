@@ -16,7 +16,7 @@ include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/include")
 file (GLOB SOURCES "source/*.cpp")
 
 add_library (ChessEngine.Core ${SOURCES})
-
+target_include_directories(ChessEngine.Core PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 
 # TODO: Ajoutez des tests et installez des cibles si necessaire.

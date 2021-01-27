@@ -26,7 +26,7 @@ namespace ChessEngine
 				{
 					if (positionIsEmpty(Position(std::make_pair(x, y))))
 					{
-						std::cout << "#";
+						std::cout << ".";
 						continue;
 					}
 
