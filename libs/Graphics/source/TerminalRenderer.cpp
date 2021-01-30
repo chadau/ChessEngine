@@ -37,7 +37,7 @@ namespace ChessEngine
 						std::cout << (figure->getColor() == FigureColor::WHITE ? "♛" : "♕");
 						break;
 					case FigureType::ROOK:
-						std::cout << (figure->getColor() == FigureColor♙::WHITE ? "♜" : "♖");
+						std::cout << (figure->getColor() == FigureColor::WHITE ? "♜" : "♖");
 						break;
 					case FigureType::BISHOP:
 						std::cout << (figure->getColor() == FigureColor::WHITE ? "♝" : "♗");
