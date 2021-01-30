@@ -13,6 +13,7 @@ include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/include")
 file (GLOB SOURCES "source/*.cpp")
 
 add_library (ChessEngine.Graphics ${SOURCES})
+target_link_libraries(ChessEngine.Graphics PRIVATE ChessEngine.Core)
 target_include_directories(ChessEngine.Graphics PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 
